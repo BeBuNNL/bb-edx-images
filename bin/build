@@ -12,7 +12,7 @@ function usage() {
     echo "  -h|--help      : Display this help message"
     echo
     echo "Arguments:"
-    echo "  IMAGE: the name of the image to build with or without a tag (e.g. nginx, nginx:1.13)."
+    echo "  IMAGE: the name of the image to build with or without a tag (e.g. nginx, nginx:1.13 or nginx:1.21.5)."
 }
 
 

@@ -12,8 +12,8 @@ jobs:
       - run:
           name: Ensure we have a clean docker environment
           command: |
-            docker images "fundocker/openshift*"
-            test -z $(docker images -q fundocker/openshift*)
+            docker images "nnlbebu/openshift*"
+            test -z $(docker images -q nnlbebu/openshift*)
 
       - run:
           name: Build services images
@@ -25,9 +25,9 @@ jobs:
       - run:
           name: Check build images
           command: |
-            docker images "fundocker/openshift*"
+            docker images "nnlbebu/openshift*"
             for service in $(ls docker/images); do
-              ! test -z $(docker images -q fundocker/openshift-${service})
+              ! test -z $(docker images -q nnlbebu/openshift-${service})
               echo "Image for service ${service} exists"
             done
 

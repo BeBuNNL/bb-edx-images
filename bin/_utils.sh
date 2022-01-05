@@ -5,8 +5,8 @@ set -eo pipefail
 # Enable aliases definition even if we are not running an interactive shell
 shopt -s expand_aliases
 
-declare DOCKERHUB_NAMESPACE="fundocker"
-declare IMAGE_NAME_PREFIX="openshift-"
+declare DOCKERHUB_NAMESPACE="nnlbebu"
+declare IMAGE_NAME_PREFIX="bb-edx-"
 declare BASE_IMAGE_PATH="docker/images"
 
 
